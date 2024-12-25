@@ -14,6 +14,8 @@ def fibonacci(n):
 if __name__ == "__main__":
     try:
         n = int(input("Fibonacci serisinin eleman sayısını girin: "))
-        print(fibonacci(n))
+        fib_dizisi = fibonacci(n)
+        print(f"Normal Fibonacci serisi: {fib_dizisi}")
+        print(f"Ters Fibonacci serisi: {fib_dizisi[::-1]}")
     except ValueError:
         print("Lütfen geçerli bir tam sayı girin!")
