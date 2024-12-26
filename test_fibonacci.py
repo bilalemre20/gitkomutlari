@@ -1,6 +1,5 @@
 import unittest
 
-# Fibonacci fonksiyonu
 def fibonacci(n):
     if n <= 0:
         return []
@@ -40,7 +39,7 @@ class TestFibonacci(unittest.TestCase):
         """Büyük Fibonacci serileri doğru hesaplanmalı."""
         fib_dizisi = fibonacci(20)
         self.assertEqual(len(fib_dizisi), 20)
-        self.assertEqual(fib_dizisi[19], 4181)  # 20. eleman (0'dan başladığı için)
+        self.assertEqual(fib_dizisi[19], 4181)  
 
 if __name__ == "__main__":
     unittest.main()
