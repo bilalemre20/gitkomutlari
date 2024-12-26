@@ -11,11 +11,8 @@ def fibonacci(n):
             fib_dizisi.append(fib_dizisi[-1] + fib_dizisi[-2])
         return fib_dizisi
 
+def main():
+    raise ValueError("Hata olması gerekiyor")
+
 if __name__ == "__main__":
-    try:
-        n = int(input("Fibonacci serisinin eleman sayısını girin: "))
-        fib_dizisi = fibonacci(n)
-        print(f"Normal Fibonacci serisi: {fib_dizisi}")
-        print(f"Ters Fibonacci serisi: {fib_dizisi[::-1]}")
-    except ValueError:
-        print("Lütfen geçerli bir tam sayı girin!")
+    main()
