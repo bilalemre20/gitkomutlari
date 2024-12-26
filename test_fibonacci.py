@@ -32,15 +32,15 @@ class TestFibonacci(unittest.TestCase):
 
     def test_reversed_sequence(self):
         """Ters çevrilmiş Fibonacci serisi doğru hesaplanmalı."""
-        fib_sequence = fibonacci(6)
-        reversed_sequence = fib_sequence[::-1]
+        fib_dizisi = fibonacci(6)
+        reversed_sequence = fib_dizisi[::-1]
         self.assertEqual(reversed_sequence, [5, 3, 2, 1, 1, 0])
 
     def test_large_sequence(self):
         """Büyük Fibonacci serileri doğru hesaplanmalı."""
-        fib_sequence = fibonacci(20)
-        self.assertEqual(len(fib_sequence), 20)
-        self.assertEqual(fib_sequence[19], 4181)  # 20. eleman (0'dan başladığı için)
+        fib_dizisi = fibonacci(20)
+        self.assertEqual(len(fib_dizisi), 20)
+        self.assertEqual(fib_dizisi[19], 4181)  # 20. eleman (0'dan başladığı için)
 
 if __name__ == "__main__":
     unittest.main()
